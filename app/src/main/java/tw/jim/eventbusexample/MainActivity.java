@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
         EventBus.getDefault().register(this);
         //post 前先確認有EventBus有register
 
-        EventBus.getDefault().post(new MessageEvent("VR46"));//Publisher
+        //EventBus.getDefault().post(new MessageEvent("VR46"));//Publisher  from activity
 
     }
 

@@ -25,7 +25,8 @@ public class MyService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.v("Jimmy", "onStartCommand");
-        //EventBus.getDefault().post(new MessageEvent("VR46"));//Publisher
+
+        EventBus.getDefault().post(new MessageEvent("VR46"));//Publisher  from service
 
         return super.onStartCommand(intent, flags, startId);
     }
